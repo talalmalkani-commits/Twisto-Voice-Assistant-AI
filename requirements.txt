@@ -1,0 +1,7 @@
+ttkbootstrap
+requests
+SpeechRecognition
+PyAudio
+pyttsx3
+pywhatkit
+google-generativeai
