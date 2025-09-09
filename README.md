@@ -1,2 +1,67 @@
-# Voice-Assistant-AI
-Twisto is a Python-based AI voice assistant with a modern Tkinter GUI. It recognizes voice commands, responds with speech, and performs tasks like opening apps, browsing YouTube, playing music, showing time, and more. Built with SpeechRecognition, pyttsx3, and ttkbootstrap.
+
+# 🤖 Twisto - AI Voice Assistant
+
+A desktop voice assistant built with Python that can handle various commands, from opening applications and fetching real-time data to sending emails and answering questions using Google's Gemini AI.
+
+
+
+---
+
+## ✨ Features
+
+* **Voice & Text Commands:** Interact by speaking or typing.
+* **Real-time Information:** Get the current time, date, weather for any city, and top news headlines from around the world.
+* **Application Control:** Open system applications like Notepad and Google Chrome.
+* **Interactive Tasks:** Send emails through a guided voice conversation.
+* **Media Control:** Open YouTube or search and play any video directly.
+* **AI-Powered Conversations:** Ask general knowledge questions powered by the Google Gemini API.
+* **Modern GUI:** A clean and responsive user interface built with `tkinter` and `ttkbootstrap`, featuring a live animated status indicator.
+
+---
+
+## 🛠️ Tech Stack
+
+-   **Core Language:** Python
+-   **GUI:** Tkinter, ttkbootstrap
+-   **Voice Recognition:** SpeechRecognition
+-   **Text-to-Speech:** pyttsx3
+-   **APIs:** Google Gemini, OpenWeatherMap, NewsAPI
+-   **Web Automation:** webbrowser, pywhatkit
+
+---
+
+## 🚀 Setup and Installation
+
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/your-username/Twisto-AI-Voice-Assistant.git](https://github.com/your-username/Twisto-AI-Voice-Assistant.git)
+    cd Twisto-AI-Voice-Assistant
+    ```
+
+2.  **Create a virtual environment:**
+    ```bash
+    python -m venv venv
+    source venv/bin/activate  # On Windows: venv\Scripts\activate
+    ```
+
+3.  **Install the required libraries:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+4.  **Add Your API Keys and Credentials:**
+    * In the main Python script (`ai1.py`), locate the sections for API keys and email credentials.
+    * Replace the placeholder values with your own personal keys from Google Gemini, OpenWeatherMap, and NewsAPI.
+    * For email, add your Gmail address and an "App Password" (do not use your regular password).
+
+---
+
+## ▶️ How to Run
+
+Once the setup is complete, run the main script from your terminal:
+
+```bash
+python ai1.py
+```
+
+Now you can start giving commands to Twisto!
