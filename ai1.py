@@ -95,8 +95,8 @@ def send_email_interactive():
     speak(f"Sending email to {recipient_name} with subject {subject}. Please wait.")
     try:
         # <<< IMPORTANT: SET YOUR EMAIL AND GMAIL APP PASSWORD HERE >>>
-        EMAIL_ADDRESS = "23-ai-001@student.hitecuni.edu.pk"
-        EMAIL_PASSWORD = "wyapttujwheytxs"
+        EMAIL_ADDRESS = "yor own email"
+        EMAIL_PASSWORD = "in app password"
 
         msg = MIMEText(message)
         msg["Subject"] = subject
@@ -122,7 +122,7 @@ def get_location():
 
 def get_weather(city):
     # <<< IMPORTANT: SET YOUR OPENWEATHERMAP API KEY HERE >>>
-    OPENWEATHER_API_KEY = "a4b90aacbdd776a0532b52a58882b22f"
+    OPENWEATHER_API_KEY = "Your-API-KEY"
     try:
         url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={OPENWEATHER_API_KEY}&units=metric"
         response = requests.get(url)
@@ -138,7 +138,7 @@ def get_weather(city):
 
 def get_news(country_code='us'):
     # <<< IMPORTANT: SET YOUR NEWSAPI KEY HERE >>>
-    NEWS_API_KEY = "e8d088b1df744654a230231ad8b41952"
+    NEWS_API_KEY = "Your-API-KEY"
     try:
         url = f"https://newsapi.org/v2/top-headlines?country={country_code}&apiKey={NEWS_API_KEY}"
         response = requests.get(url)
@@ -154,7 +154,7 @@ def get_news(country_code='us'):
 # --- AI General Query Handler (Gemini) ---
 def ask_ai(question):
     # <<< IMPORTANT: SET YOUR GEMINI API KEY HERE >>>
-    GEMINI_API_KEY = "AIzaSyCcpyQW2zDg0lS8ann4BYyd6bUxwrG0ueU"
+    GEMINI_API_KEY = "Your-API-Key"
     genai.configure(api_key=GEMINI_API_KEY)
     try:
         model = genai.GenerativeModel("gemini-1.5-flash")
@@ -433,4 +433,5 @@ def main():
     app.mainloop()
 
 if __name__ == "__main__":
+
     main()
